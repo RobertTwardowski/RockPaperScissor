@@ -1,52 +1,62 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7117492f21.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>rock paper scissor</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>   
-      <div class="pvp-game">
-        <div class="first-player">
-        <i id="a" class="fa-solid fa-hand-back-fist fa-8x hidden"></i><i id="s" class="fa-solid fa-hand fa-8x hidden"></i><i id="d" class="fa-solid fa-hand-scissors fa-flip-horizontal fa-8x hidden"></i>
+        <h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i
+                class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>
+        <div class="pvp-game">
+            <div class="first-player">
+                <i id="a" class="fa-solid fa-hand-back-fist fa-8x hidden"></i><i id="s"
+                    class="fa-solid fa-hand fa-8x hidden"></i><i id="d"
+                    class="fa-solid fa-hand-scissors fa-flip-horizontal fa-8x hidden"></i>
+            </div>
+            <p class="fight hidden">3</p>
+            <div class="second-player">
+                <i id="j" class="fa-solid fa-hand-back-fist fa-8x hidden"></i><i id="k"
+                    class="fa-solid fa-hand fa-8x hidden"></i><i id="l"
+                    class="fa-solid fa-hand-scissors fa-8x hidden"></i>
+            </div>
         </div>
-        <p class="fight hidden">3</p>
-        <div class="second-player">
-        <i id="j" class="fa-solid fa-hand-back-fist fa-8x hidden"></i><i id="k" class="fa-solid fa-hand fa-8x hidden"></i><i id="l" class="fa-solid fa-hand-scissors fa-8x hidden"></i>
-    </div>
-    </div>
         <div class="button">
             <div class="button1 hidden">
                 <div class="player1">
-                <button class="a">rock<i class="fa-solid fa-hand-back-fist"></i>A</button>
-                <button class="s">paper<i class="fa-solid fa-hand"></i>S</button>
-                <button class="d">scissor<i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i>D</button>
+                    <button class="a">rock<i class="fa-solid fa-hand-back-fist"></i>A</button>
+                    <button class="s">paper<i class="fa-solid fa-hand"></i>S</button>
+                    <button class="d">scissor<i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i>D</button>
                 </div>
                 <p>Click key to WIN</p>
                 <div class="player2 ">
-                <button class="j">rock<i class="fa-solid fa-hand-back-fist"></i>J</button>
-                <button class="k">paper<i class="fa-solid fa-hand"></i>K</button>
-                <button class="l">scissor <i class="fa-solid fa-hand-scissors"></i>L</button>
+                    <button class="j">rock<i class="fa-solid fa-hand-back-fist"></i>J</button>
+                    <button class="k">paper<i class="fa-solid fa-hand"></i>K</button>
+                    <button class="l">scissor <i class="fa-solid fa-hand-scissors"></i>L</button>
                 </div>
             </div>
-        <div class="button2">
-        <button class="pvp">Start Game</button> 
-    </div> 
-    </div>
-    <div class="fightPvp">
-        <button class="back hidden">Reset</button>
-    </div>
-    <div class="resalut hidden">
-        <p class="resalut1">0</p><p>:</p><p class="resalut2">0</p>
-    </div>
-    <script src="script.js"></script>
+            <div class="button2">
+                <button class="pvp">Start Game</button>
+            </div>
+        </div>
+        <div class="fightPvp">
+            <button class="back hidden">Reset</button>
+        </div>
+        <div class="resalut hidden">
+            <p class="resalut1">0</p>
+            <p>:</p>
+            <p class="resalut2">0</p>
+        </div>
+        <script src="script.js"></script>
 </body>
+
 </html>
