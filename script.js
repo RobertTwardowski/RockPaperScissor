@@ -10,6 +10,7 @@ const resalutTwo = document.querySelector(".resalut2");
 const iconShow = document.querySelectorAll(".pvp-game i");
 const playerFirstChoosen = document.querySelectorAll(".player1 button");
 const playerSecondChoosen = document.querySelectorAll(".player2 button");
+const header = document.querySelector(".header")
 
 let player2;
 let player1;
@@ -23,6 +24,7 @@ const startGamePvp = () => {
   pvp.classList.remove("hidden");
   resalut.classList.remove("hidden");
   fight.classList.remove("hidden");
+  header.innerHTML = `Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i>`
   timer(3);
 };
 
@@ -36,6 +38,7 @@ const resetGame = () => {
   resalutTwo.textContent = "0";
   winPlayerOne = 1;
   winPlayerTwo = 1;
+  header.innerHTML = `<h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>`
 };
 
 const playerChose = (e) => {
