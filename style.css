@@ -1,0 +1,112 @@
+:root{
+    --animate-speed: 1s;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik Glitch', cursive;
+}
+
+
+body{
+    font-family: 'Rubik Glitch', cursive;
+    background-color: #66b3ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 4rem;
+    color: #660066;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pvp-game{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.pvp-game p{
+    font-size: 3rem;
+    margin: 0 2rem 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+}
+.player1{
+    transform: translateX(-400px);
+    animation:show var(--animate-speed) forwards ease-in;
+}
+.player2{
+    transform: translateX(400px);
+    animation:show var(--animate-speed) forwards ease-in;
+}
+.button p{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+button{
+    margin:0 2rem 0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: #66b3ff;
+    font-size: 1.2rem;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+}
+.choosen{
+    background-color: #3b99f8;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #3b99f8;
+}
+.first-player{
+    transform: translateX(-1000px);
+    animation:show var(--animate-speed) forwards ease-in;
+}
+.second-player{
+    transform: translateX(1000px);
+    animation:show var(--animate-speed) forwards ease-in;
+}
+
+
+
+.resalut{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+@keyframes show{
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+.hidden{
+    display: none;
+}
