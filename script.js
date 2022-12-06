@@ -1,7 +1,7 @@
 const btnPvp = document.querySelector(".pvp");
 const btnReset = document.querySelector(".back");
 const game = document.querySelector(".button2");
-const btnGamePvp = document.querySelector(".fightPvp");
+const btnGamePvp = document.querySelector(".back");
 const pvp = document.querySelector(".button1");
 const resalut = document.querySelector(".resalut");
 const fight = document.querySelector(".fight");
@@ -39,6 +39,7 @@ const resetGame = () => {
   winPlayerOne = 1;
   winPlayerTwo = 1;
   header.innerHTML = `<h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>`
+
 };
 
 const playerChose = (e) => {
