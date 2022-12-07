@@ -12,6 +12,7 @@
 
 
 body{
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     background-color: #66b3ff;
     height: 100vh;
