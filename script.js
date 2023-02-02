@@ -39,7 +39,7 @@ const resetGame = () => {
   winPlayerOne = 1;
   winPlayerTwo = 1;
   header.innerHTML = `<h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>`
-
+  location.reload()
 };
 
 const playerChose = (e) => {
@@ -123,7 +123,7 @@ const clear = () => {
   document.removeEventListener("keypress", playerChose);
 };
 
-//showing which icon show
+//showing which icon
 const whichKeyClicked = (player1, player2) => {
   iconShow.forEach((iconFirst) => {
     if (iconFirst.id === player1) {
@@ -146,7 +146,7 @@ const whichKeyClicked = (player1, player2) => {
     }
   });
 };
-//adding and remove class button hover
+//add and remove class button hover
 const choosenRemove = () => {
   setTimeout(() => {
     playerFirstChoosen.forEach((player1) => {
