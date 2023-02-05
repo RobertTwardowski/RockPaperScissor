@@ -29,6 +29,7 @@ const startGamePvp = () => {
 };
 
 const resetGame = () => {
+  location.reload()
   game.classList.remove("hidden");
   btnReset.classList.add("hidden");
   pvp.classList.add("hidden");
@@ -39,11 +40,12 @@ const resetGame = () => {
   winPlayerOne = 1;
   winPlayerTwo = 1;
   header.innerHTML = `<h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>`
-  location.reload()
+  
 };
 
 const playerChose = (e) => {
-  let player = String.fromCharCode(e.keyCode);
+  
+  let player = e.target.className;
   player = player.toLowerCase();
 
   if (player == "a" || player == "s" || player == "d") {
@@ -108,6 +110,7 @@ const timer = (e) => {
       if (e === -1) {
         fight.textContent = "Fight";
         document.addEventListener("keypress", playerChose);
+        document.addEventListener("click", playerChose);
         clearInterval(interval);
       }
       if (e > -1) {
