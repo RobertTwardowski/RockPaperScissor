@@ -30,17 +30,6 @@ const startGamePvp = () => {
 
 const resetGame = () => {
   location.reload()
-  game.classList.remove("hidden");
-  btnReset.classList.add("hidden");
-  pvp.classList.add("hidden");
-  resalut.classList.add("hidden");
-  fight.classList.add("hidden");
-  resalutOne.textContent = "0";
-  resalutTwo.textContent = "0";
-  winPlayerOne = 1;
-  winPlayerTwo = 1;
-  header.innerHTML = `<h1 class="header">Welcome to the game of Rock <i class="fa-solid fa-hand-back-fist"></i> Paper <i class="fa-solid fa-hand"></i> Scissor <i class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></h1>`
-  
 };
 
 const playerChose = (e) => {
@@ -124,6 +113,7 @@ const clear = () => {
   whichKeyClicked(player1, player2);
   choosenRemove();
   document.removeEventListener("keypress", playerChose);
+  document.removeEventListener("click", playerChose);
 };
 
 //showing which icon
