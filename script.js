@@ -34,8 +34,9 @@ const resetGame = () => {
 
 const playerChose = (e) => {
   
-  let player = e.target.className;
-  player = player.toLowerCase();
+  let player = e.target.className || e.key
+  
+ 
 
   if (player == "a" || player == "s" || player == "d") {
     player1 = player;
