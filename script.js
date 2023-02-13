@@ -33,7 +33,8 @@ const resetGame = () => {
 }
 
 const playerChose = e => {
-  let player = e.target.className || e.key
+  let player = e.target.className.slice(0, 1) || e.key
+  console.log(player)
 
   if (player == 'a' || player == 's' || player == 'd') {
     player1 = player
@@ -142,6 +143,7 @@ const choosenRemove = () => {
   setTimeout(() => {
     playerFirstChoosen.forEach(player1 => {
       player1.classList.remove('choosen')
+      
     })
     playerSecondChoosen.forEach(player2 => {
       player2.classList.remove('choosen')
