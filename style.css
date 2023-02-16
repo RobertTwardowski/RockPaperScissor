@@ -40,8 +40,8 @@ h1 {
 }
 
 .pvp-game p {
-    font-size: 2rem;
-    padding: 2.2rem;
+    font-size: 2.2rem;
+    padding:2rem 0.5rem;
 }
 
 .button {
@@ -162,6 +162,9 @@ button:hover {
         background: #dbdfe2;
         box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
         
+    }
+    .pvp-game p{
+        font-size: 1.5rem;
     }
 
     h1 {

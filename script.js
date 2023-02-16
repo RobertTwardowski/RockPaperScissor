@@ -34,7 +34,6 @@ const resetGame = () => {
 
 const playerChose = e => {
   let player = e.target.className.slice(0, 1) || e.key
-  console.log(player)
 
   if (player == 'a' || player == 's' || player == 'd') {
     player1 = player
