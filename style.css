@@ -41,8 +41,11 @@ h1 {
 
 .pvp-game p {
     font-size: 2.2rem;
-    padding:2rem 0.5rem;
+    padding: 2rem 0.5rem;
+    color: #BA0021;
+    font-weight: bold;
 }
+
 
 .button {
     display: flex;
@@ -94,15 +97,16 @@ h1 {
     font-size: 1.5rem;
 }
 
-button, .btn {
+button,
+.btn {
     margin: 1rem 2rem 0;
     padding: 15px 20px;
     border-radius: 6px;
     background: linear-gradient(rgb(132, 132, 141) 0%, rgb(116, 137, 141) 100%);
     font-size: 1.2rem;
     box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    
-    
+
+
 }
 
 .button2 {
@@ -112,7 +116,7 @@ button, .btn {
 
 .choosen {
     background: #dbdfe2;
-    
+
 }
 
 button:hover {
@@ -161,9 +165,10 @@ button:hover {
     button:hover {
         background: #dbdfe2;
         box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-        
+
     }
-    .pvp-game p{
+
+    .pvp-game p {
         font-size: 1.5rem;
     }
 
