@@ -53,7 +53,7 @@ const zeroPlayer = () => {
   timer(3)
 }
 const ChangeColor = e => {
-  if (e === undefined) {
+  if (!e) {
     iconShow.forEach(iconFirst => (iconFirst.style.color = '#000'))
   }
 
